@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 
 import { getProductById, Product as ProductType } from "../mock/fake-data";
 import ProductCard from "../components/ProductCard";
-import { PageTitle } from "./products/index.style";
+import { PageTitle } from "../styles/products.style";
 
 interface ProductProps {
   product: ProductType;

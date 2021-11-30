@@ -2,7 +2,7 @@ import { GetServerSideProps } from "next";
 import { ParsedUrlQuery } from "querystring";
 import {  Product as ProductType } from "../mock/fake-data";
 import ProductCard from "../components/ProductCard";
-import { PageTitle } from "./products/index.style";
+import { PageTitle } from "../styles/products.style";
 
 // react component
 

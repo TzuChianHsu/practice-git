@@ -29,7 +29,7 @@ import { getSession } from "next-auth/client";
 
 import ProductCard from "../../components/ProductCard";
 import { Product } from "../../mock/fake-data";
-import { PageTitle, ProductGallery } from "./index.style";
+import { PageTitle, ProductGallery } from "../../styles/products.style";
 
 interface HomeProps {
   products: Product[];

@@ -6,7 +6,7 @@ import useSWR from "swr";
 
 import { Product as ProductType } from "../../mock/fake-data";
 import ProductCard from "../../components/ProductCard";
-import { PageTitle, ProductContainer, BackLink } from "./[id].style";
+import { PageTitle, ProductContainer, BackLink } from "../../styles/products.[id].style";
 
 type Params = {
   id: string;

@@ -11,10 +11,10 @@ import {
   ControlInput,
   SubmitButtonWrapper,
   SubmitButton,
-} from "./index.style";
+} from "../../styles/login.style";
 
 const LoginForm = () => {
-    const [email, setEmail] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
   const [password, setPassword] = useState<string>("");
 
   const router = useRouter();
