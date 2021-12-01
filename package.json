@@ -9,6 +9,9 @@
     "prettier": "prettier '**/*.{js,jsx,ts,tsx}' --write"
   },
   "dependencies": {
+    "antd": "^4.17.2",
+    "less": "^4.1.2",
+    "less-loader": "^10.2.0",
     "mongodb": "^4.2.0",
     "next": "12.0.4",
     "next-auth": "^3.29.0",
@@ -19,7 +22,7 @@
   },
   "devDependencies": {
     "@types/node": "16.11.9",
-    "@types/react": "17.0.36",
+    "@types/react": "^17.0.37",
     "@types/styled-components": "^5.1.15",
     "@typescript-eslint/eslint-plugin": "^5.5.0",
     "add": "^2.0.6",
@@ -28,6 +31,8 @@
     "eslint-config-next": "12.0.4",
     "eslint-config-prettier": "^8.3.0",
     "husky": "^7.0.4",
+    "next-compose-plugins": "^2.2.1",
+    "next-with-less": "^2.0.2",
     "prettier": "^2.5.0",
     "typescript": "4.5.2",
     "yarn": "^1.22.17"
