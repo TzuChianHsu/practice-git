@@ -5,9 +5,14 @@ import { useSession } from "next-auth/client";
 import useSWR from "swr";
 
 import { Product as ProductType } from "../../mock/fake-data";
-import ProductCard from "../../components/ProductCard";
+// import ProductCard from "../../components/ProductCard";
 import { PageTitle, ProductContainer, BackLink } from "../../styles/products.[id].style";
 import { isEmpty } from "lodash"
+
+// 適合 dynamic import 的 component
+// 像是 Modal、Drawer 等等會等待跟使用者互動後才顯示的 component，換句話說，並不是每位使用者都會用到的 component
+import dynamic from "next/dynamic";
+const ProductCard = dynamic(import("../../components/ProductCard"));
 
 type Params = {
   id: string;

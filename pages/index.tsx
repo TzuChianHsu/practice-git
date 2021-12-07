@@ -2,7 +2,7 @@
 // import Head from 'next/head'
 // import Image from 'next/image'
 // import styles from '../styles/Home.module.css'
-// import { Button } from "antd";
+ import { Button } from "antd";
 
 // const Home: NextPage = () => {
 //   return (
@@ -79,7 +79,9 @@ import Layout from "../components/Layout";
 const Home: NextPage = () => {
   return (
     <Layout>
-      <div>You are in /</div>
+      <Button className="sm:m-16 m-8" type="primary">
+        my button
+      </Button>
     </Layout>
   );
 };
