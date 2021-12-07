@@ -40,7 +40,7 @@ const Home = ({ products }: HomeProps) => {
     <>
       <PageTitle>商品列表</PageTitle>
       <ProductGallery>
-        {products.map((product) => (
+        {products && products.map((product) => (
           <ProductCard key={product.id} product={product} />
         ))}
       </ProductGallery>

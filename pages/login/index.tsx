@@ -14,8 +14,8 @@ import {
 } from "../../styles/login.style";
 
 const LoginForm = () => {
-  const [email, setEmail] = useState<string>("");
-  const [password, setPassword] = useState<string>("");
+  const [email, setEmail] = useState<string>("admin@email.com");
+  const [password, setPassword] = useState<string>("password1234");
 
   const router = useRouter();
 

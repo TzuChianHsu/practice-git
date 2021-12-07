@@ -7,6 +7,7 @@ import useSWR from "swr";
 import { Product as ProductType } from "../../mock/fake-data";
 import ProductCard from "../../components/ProductCard";
 import { PageTitle, ProductContainer, BackLink } from "../../styles/products.[id].style";
+import { isEmpty } from "lodash"
 
 type Params = {
   id: string;
@@ -37,6 +38,7 @@ const Product = () => {
   );
 
   if (!product || error) return <div>loading</div>;
+
 
   return (
     <>
